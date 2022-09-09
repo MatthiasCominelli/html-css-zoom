@@ -1,0 +1,41 @@
+/* Global setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-s: 12px;
+    --font-m: 16px;
+    --font-l: 20px;
+    --font-xl: 24px;
+    --red: red;
+    --green: #24d559;
+    --grey: #a7a7a7;
+    --grey-2: #6b6b6b;
+    --grey-3: #313131;
+    --blue: #0d72ed;
+    --white: white;
+    --black: #000000;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+html {
+    font-family: Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    color: var(--white);
+}
+
+li {
+    list-style: none;
+}
