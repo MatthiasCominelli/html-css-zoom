@@ -212,7 +212,6 @@ footer li:hover :not(button) :not(.fa-share-from-square) {
     opacity: 0.5;
     cursor: pointer;
 }
-
 .fa-share-from-square {
     color: var(--green);
 }
