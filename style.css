@@ -83,3 +83,69 @@ header div:nth-child(2) i {
     padding: 3px 4px;
     display: inline;
 }
+
+/* Main */
+main {
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 45px;
+}   
+
+.image {
+    position: relative;
+    padding: 5px;
+    height: calc((100vh - 120px) / 5);
+}
+
+.image .status {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(78, 78, 78, 0.8);
+    padding: 3px;
+    border-radius: 3px;
+    font-size: 14px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: none;
+}
+
+.image .inner-menu {
+    display: flex;
+    justify-content: flex-start;
+    background-color: var(--blue);
+    padding: 3px 5px;
+    border-radius: 4px;
+    font-size: 14px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+.image i:not(.inner-menu i) {
+    font-size: 12px;
+    padding-right: 5px;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.image:hover .status {
+    display: flex;
+}
+
+.image:hover .inner-menu {
+    display: flex;
+}
